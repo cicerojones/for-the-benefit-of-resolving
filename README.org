@@ -31,19 +31,22 @@ git push -v origin master:refs/heads/master
       3. origin/master
    2. you must give the branch a name
 ** make changes on the development branch and share them with the master
-1. make sure you where/what branch you have checked out
+1. make sure you know where/what branch you have checked out
 2. make, stage and commit changes on a local branch
-3. in magit, you will not see a remote for this local branch
+3. in magit, you will not see a remote for this local branch (in the status buffer)
 4. so, switch to the master branch (checkout master)
-   1. you may encounter errors if you haven't staged/committed things!
+   1. you may encounter errors if you've made changes in the interim that you haven't staged/committed things!
 5. once master is checked out, merge in changes from your development branch
    1. in magit, you will see  options to "preview" merge
+6. if you make any further changes while on master, you will need to merge them back to dev!
 ** clone the repo onto a different computer
 1. on github you can click "clone" to get the URL
 2. switch to the directory you want to be your "container"
 3. magit-clone (is different from =git clone= or not?) using the copied URL
    1. many strange or bewildering things can happen here, mostly involving ssh configuration
 ** get ready to create conflicting changes
-1. confirm what branch you are on
+1. confirm what branch you are on for this new computer
+2. make sure it has the most recent changes from the remote master
+   1. note that magit and git may not be coordinated (on my crouton linux)
 
 
