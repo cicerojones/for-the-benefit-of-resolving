@@ -54,4 +54,4 @@ git push -v origin master:refs/heads/master
 1. check what branch you are on (use the dev) using the first computer
 2. give a numbered item some meaningless content you will deviate from elsewhere
 3. computer no. 1 on local branch says: yabba-dabba-do
-
+4. computer no. 2 on local dev branch says: i scream, you scream
