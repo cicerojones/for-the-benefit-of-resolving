@@ -72,3 +72,59 @@ git push -v origin master:refs/heads/master
 7. make list item 5 on computer no. 2 conflict with item 5 on computer no. 1
 8. now switch to master on no. 2 and pull in changes from remote (which would conflict with dev, if merged)
 >>>>>>> master
+* what could, er, will go wrong
+** common problems
+1. you will forget to check out the development branch
+2. you will have weird configuration problems with ssh and/or various keychain options
+3. you will make conflicting changes that are hard to reconcile
+** possible solutions
+1. develop good habits about editing
+   1. when looking at a version controlled file, DON'T JUST EDIT; you must CHECKOUT!
+2. develop your understanding of git config options, ssh and other  "keychain" matters
+   1. practice setting up ssh on new computers or using different accounts multiple times
+   2. check what email git has been configured with, among other details =git config --list= shows
+3. develop a practice regimen of making controlled changes
+   1. use list items first
+   2. use short, "line numbered" source code examples
+   3. watch out for very long files, or files that have seen pushed commits in a while
+   4. don't work on a master!
+* extra "stashed" notes from another file
+** hide git text emendations
++you may need to restart your ssh agent when using linux, (esp. with bitbucket?)
++
++https://help.github.com/articles/reviewing-your-ssh-keys/#platform-linux
++https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html
++
++#+BEGIN_SRC sh
++ssh -T git@bitbucket.org
++#+END_SRC
++
++Also see the following for more understanding
++#+BEGIN_SRC sh
++eval "$(ssh-agent -s)"
++#+END_SRC
++
++What does it mean when the following:
++#+BEGIN_SRC sh
++ssh-add -l
++#+END_SRC
++
++returns
++
++=The agent has no identities= 
++
++hmmm...
++
++When in doubt, just go:
++#+BEGIN_SRC sh
++git push
++#+END_SRC
++
++and hope for the best!
++** gosh darn merge conflicts
++To be resolved "by hand??"
++https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html
++
++we want to resolve a conflict between the destination (development) branch and the source (new-names) branch which was detected during a pull request
++
+
