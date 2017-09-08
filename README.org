@@ -55,4 +55,20 @@ git push -v origin master:refs/heads/master
 2. give a numbered item some meaningless content you will deviate from elsewhere
 3. computer no. 1 on local branch says: yabba-dabba-do
 4. computer no. 2 on local dev branch says: i scream, you scream
+5. computer no. 1 says 5 is: nah-nah poo poo
+6. switch to computer no. 2 and make sure you are checked out on dev branch
+7. make list item 5 on computer no. 2 conflict with item 5 on computer no. 1
+8. now switch to master on no. 2 and pull in changes from remote (which would conflict with dev, if merged)
+** (conflicted version) now set up the part of the file to make conflicting changes
+1. check what branch you are on (use the dev) using the first computer
+2. give a numbered item some meaningless content you will deviate from elsewhere
+3. computer no. 1 on local branch says: yabba-dabba-do
+4. computer no. 2 on local dev branch says: i scream, you scream
+<<<<<<< HEAD
 5. computer no. 2 on local dev branch says: kakee doodee
+=======
+5. computer no. 1 says 5 is: nah-nah poo poo
+6. switch to computer no. 2 and make sure you are checked out on dev branch
+7. make list item 5 on computer no. 2 conflict with item 5 on computer no. 1
+8. now switch to master on no. 2 and pull in changes from remote (which would conflict with dev, if merged)
+>>>>>>> master
