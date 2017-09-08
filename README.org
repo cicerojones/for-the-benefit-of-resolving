@@ -1,1 +1,24 @@
 * This is the first file
+** start with a local project to track remotely
+1. create a directory
+2. create a file
+3. initialize the directory as a git repo
+4. stage the file
+5. commit the changes
+6. check your git status
+7. create a new repository remotely (use Github's interface)
+8. add a remote to your git project
+   1. git remote add origin <URL>
+9. push the existing repo up from the command line to the remote server (see below)
+   1. git push -u origin master
+   2. what could go wrong!
+10. begin branching (see next)
+
+#+BEGIN_SRC sh
+git remote add origin git@github.com:cicerojones/for-the-benefit-of-resolving.git
+#+END_SRC
+** work with branches and multiple computers
+1. you can "create branch" on bitbucket, but not github?
+2. create a local branch
+
+
