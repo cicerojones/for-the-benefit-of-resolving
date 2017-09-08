@@ -48,5 +48,7 @@ git push -v origin master:refs/heads/master
 1. confirm what branch you are on for this new computer
 2. make sure it has the most recent changes from the remote master
    1. note that magit and git may not be coordinated (on my crouton linux)
+3. switched to the second computer, try to make a change that will not obviously "conflict"
+   1. say, add on to the end of the document or file
 
 
