@@ -50,5 +50,8 @@ git push -v origin master:refs/heads/master
    1. note that magit and git may not be coordinated (on my crouton linux)
 3. switched to the second computer, try to make a change that will not obviously "conflict"
    1. say, add on to the end of the document or file
-
+** now set up the part of the file to make conflicting changes
+1. check what branch you are on (use the dev) using the first computer
+2. give a numbered item some meaningless content you will deviate from elsewhere
+3. computer no. 1 on local branch says: yabba-dabba-do
 
