@@ -17,8 +17,25 @@
 #+BEGIN_SRC sh
 git remote add origin git@github.com:cicerojones/for-the-benefit-of-resolving.git
 #+END_SRC
+
+What's this mean (as reported by magit when pushing up "unmerged" commits)?
+#+BEGIN_SRC sh
+git push -v origin master:refs/heads/master
+#+END_SRC
 ** work with branches and multiple computers
 1. you can "create branch" on bitbucket, but not github?
-2. create a local branch
+2. create and checkout a local branch
+   1. you will be given options where to "start" the branch
+      1. HEAD
+      2. master [this the magit default]
+      3. origin/master
+   2. you must give the branch a name
+** clone the repo onto a different computer
+1. on github you can click "clone" to get the URL
+2. switch to the directory you want to be your "container"
+3. magit-clone (is different from =git clone= or not?) using the copied URL
+   1. many strange or bewildering things can happen here, mostly involving ssh configuration
+** get ready to create conflicting changes
+1. confirm what branch you are on
 
 
