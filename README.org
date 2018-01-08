@@ -128,3 +128,18 @@ git push -v origin master:refs/heads/master
 +we want to resolve a conflict between the destination (development) branch and the source (new-names) branch which was detected during a pull request
 +
 * recover a deleted file
+** let's create a file
+#+begin_src sh
+touch delete-me.org
+#+end_src
+
+#+RESULTS:
+
+#+begin_src sh
+ls
+#+end_src
+
+#+RESULTS:
+| README.org    |
+| README.org~   |
+| delete-me.org |
