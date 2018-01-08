@@ -127,4 +127,4 @@ git push -v origin master:refs/heads/master
 +
 +we want to resolve a conflict between the destination (development) branch and the source (new-names) branch which was detected during a pull request
 +
-
+* recover a deleted file
