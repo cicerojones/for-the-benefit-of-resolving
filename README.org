@@ -150,3 +150,5 @@ Just "reset?"
 
 Or delete it entirely if you don't care about the changes you made in it.
 * commit added a file you wanted to ignore
+let's say you make a file.wav (which is a binary file in theory, which you don't want to be tracking in version control.)
+
