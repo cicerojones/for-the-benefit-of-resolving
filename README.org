@@ -147,4 +147,6 @@ ls
 Cannot reverse unstaged changes? 
 
 Just "reset?"
+
+Or delete it entirely if you don't care about the changes you made in it.
 * commit added a file you wanted to ignore
