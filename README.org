@@ -143,3 +143,8 @@ ls
 | README.org    |
 | README.org~   |
 | delete-me.org |
+* get rid of a whole file
+Cannot reverse unstaged changes? 
+
+Just "reset?"
+* commit added a file you wanted to ignore
